@@ -11,11 +11,15 @@
 ## [Notion](https://www.notion.so/Boiler-Efficiency-c26e8cb21d464244be4d6585f8494e3c)
 
 
-## 회의록
-- 9월 9일
-- 9월 16일
-- 9월 20일
+## 회의록, 진행상황
+- 9월 9일 (https://www.notion.so/9-9-115458dfe18b80bead3af7613b520b53)
+- 9월 16일 (https://www.notion.so/9-16-115458dfe18b80ccbec6e3629537314c)
+- 9월 20일 (https://www.notion.so/9-20-115458dfe18b80908411d2072533b163)
 - 9월 23일
+- 9월 30일 (https://www.notion.so/9-30-115458dfe18b8076a6c6d5373ac4b444)
+- 10월 3일 (https://www.notion.so/10-3-115458dfe18b8009a93bd92390759bfa)
+- 10월 7일 (https://www.notion.so/10-7-11c458dfe18b80fa8c00ca22c700dcdd)
+- 10월 10일 (https://www.notion.so/10-10-11c458dfe18b8040a125d05e135e7168)
 
 ## 팀원
 ### AI

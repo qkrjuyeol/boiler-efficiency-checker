@@ -20,18 +20,21 @@
 - 10월 3일 (https://www.notion.so/10-3-115458dfe18b8009a93bd92390759bfa)
 - 10월 7일 (https://www.notion.so/10-7-11c458dfe18b80fa8c00ca22c700dcdd)
 - 10월 10일 (https://www.notion.so/10-10-11c458dfe18b8040a125d05e135e7168)
+- 10월 14일 (https://www.notion.so/10-14-124458dfe18b8044a677d0b3b9b9e340)
+- 10월 16일 (https://www.notion.so/10-16-124458dfe18b80f883ebe72830bee2a6)
+
 
 ## 팀원
 ### AI
-박주열(조장)
+박주열(조장, XGBoost)
 
-전동환
+전동환(RF)
 
-김희성
+김희성(XGBoost)
 
-Jennie
+Jennie(데이터 전처리)
 
-권보민
+권보민(RF)
 
 ### Front
 

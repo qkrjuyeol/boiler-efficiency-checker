@@ -13,7 +13,7 @@ const ImageDisplay = ({ apiEndpoint }) => {
     setLoading(true);
     setError(null);
 
-    fetch(`http://192.168.45.197:5000/${apiEndpoint}`) // 백엔드 API 요청
+    fetch(`http://127.0.0.1:5000/${apiEndpoint}`) // 백엔드 API 요청
       .then((response) => {
         if (!response.ok) {
           throw new Error('네트워크 응답이 실패했습니다.');
@@ -21,7 +21,7 @@ const ImageDisplay = ({ apiEndpoint }) => {
         return response.json();
       })
       .then((data) => {
-        setImageData(data.image); // Base64 형식의 이미지 데이터
+        setImageData(data.data); // Base64 형식의 이미지 데이터
       })
       .catch((error) => setError(error.message))
       .finally(() => setLoading(false));
@@ -36,7 +36,7 @@ const ImageDisplay = ({ apiEndpoint }) => {
       ) : error ? (
         <p>오류 발생: {error}</p>
       ) : (
-        <img src={`data:image/png;base64,${imageData}`} alt={`${apiEndpoint} 결과`} />
+        <img src={`data:image/jpeg;base64,${imageData}`} alt={`${apiEndpoint} 결과`} />
       )}
     </div>
   );

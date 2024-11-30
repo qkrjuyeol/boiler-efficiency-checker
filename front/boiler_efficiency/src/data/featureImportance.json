@@ -1,0 +1,126 @@
+
+{
+    "features": [
+      {
+        "name": "Exhaust Gas Temperature 1",
+        "importance": 0.1180
+      },
+      {
+        "name": "Economizer Temperature 2",
+        "importance": 0.0969
+      },
+      {
+        "name": "Water Supply Amount (Instantaneous Flow)",
+        "importance": 0.0892
+      },
+      {
+        "name": "Fuel Amount (Instantaneous Flow)",
+        "importance": 0.0774
+      },
+      {
+        "name": "Exhaust Gas Temperature 3",
+        "importance": 0.0753
+      },
+      {
+        "name": "Fuel Amount (Cumulative Flow)",
+        "importance": 0.0609
+      },
+      {
+        "name": "Water Supply Amount (Cumulative Flow)",
+        "importance": 0.0587
+      },
+      {
+        "name": "Exhaust Gas Temperature 2",
+        "importance": 0.0559
+      },
+      {
+        "name": "Economizer Temperature 1",
+        "importance": 0.0530
+      },
+      {
+        "name": "Exhaust Gas O2",
+        "importance": 0.0471
+      },
+      {
+        "name": "Air Damper Input",
+        "importance": 0.0460
+      },
+      {
+        "name": "Boiler Temperature",
+        "importance": 0.0405
+      },
+      {
+        "name": "Exhaust Gas NOx",
+        "importance": 0.0402
+      },
+      {
+        "name": "Gas Damper Input",
+        "importance": 0.0322
+      },
+      {
+        "name": "Blower Input",
+        "importance": 0.0205
+      },
+      {
+        "name": "Boiler Pressure",
+        "importance": 0.0196
+      },
+      {
+        "name": "load factor",
+        "importance": 0.0165
+      },
+      {
+        "name": "Water Supply Pump",
+        "importance": 0.0146
+      },
+      {
+        "name": "Water Supply Level",
+        "importance": 0.0144
+      },
+      {
+        "name": "Air Damper",
+        "importance": 0.0080
+      },
+      {
+        "name": "Gas Damper",
+        "importance": 0.0076
+      },
+      {
+        "name": "Blower Inverter Output",
+        "importance": 0.0074
+      },
+      {
+        "name": "Recirculation Damper Input",
+        "importance": 0.0000
+      },
+      {
+        "name": "Recirculation External Damper",
+        "importance": 0.0000
+      },
+      {
+        "name": "Recirculation Damper",
+        "importance": 0.0000
+      },
+      {
+        "name": "Water Supply Pump Input",
+        "importance": 0.0000
+      },
+      {
+        "name": "Set Pressure",
+        "importance": 0.0000
+      },
+      {
+        "name": "Recirculation External Damper Input",
+        "importance": 0.0000
+      },
+      {
+        "name": "Recirculation NOx",
+        "importance": 0.0000
+      },
+      {
+        "name": "Recirculation O2",
+        "importance": 0.0000
+      }
+    ]
+  }
+  

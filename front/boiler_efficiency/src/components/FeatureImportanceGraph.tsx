@@ -1,5 +1,6 @@
 // File: src/components/FeatureImportanceGraph.tsx
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Chart } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -10,7 +11,6 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import featureImportance from '../data/featureImportance.json';
 
 // Register the required components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
@@ -26,8 +26,19 @@ const FeatureImportanceGraph: React.FC = () => {
   const [features, setFeatures] = useState<Feature[]>([]);
 
   useEffect(() => {
-    // Using data from JSON file
-    setFeatures(featureImportance.features);
+    // Fetch data from the API endpoint
+    axios.get('http://127.0.0.1:5000/rf')
+      .then(response => {
+        // Assuming the response is of the format { features: [{ name: '...', importance: ... }, ...] }
+        if (response.data && response.data.features) {
+          setFeatures(response.data.features);
+        } else {
+          console.error('Unexpected response structure:', response.data);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching feature importance data:', error);
+      });
   }, []);
 
   const chartData = {
@@ -46,7 +57,7 @@ const FeatureImportanceGraph: React.FC = () => {
     plugins: {
       legend: {
         display: true,
-        position: 'top' as const, // Corrected: Specify the position explicitly as 'top', 'bottom', 'left', or 'right'
+        position: 'top' as const,
       },
       title: {
         display: true,
@@ -67,7 +78,7 @@ const FeatureImportanceGraph: React.FC = () => {
           },
         },
         ticks: {
-          maxRotation: 45, // Rotate labels by 45 degrees for better readability
+          maxRotation: 45,
           minRotation: 45,
           autoSkip: false,
           font: {

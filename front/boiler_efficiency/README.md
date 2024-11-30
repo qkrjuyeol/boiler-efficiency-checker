@@ -50,10 +50,9 @@ The repository is divided into the following main directories:
           전처리 결과 -> shows preprocessed data
           RF 결과 -> Feature importance Random Forest model with values
           최적화 결과 -> Efficiency result
-
-<img width="1440" alt="Screenshot 2024-11-30 at 2 32 13 PM" src="https://github.com/user-attachments/assets/23e17f3f-fc67-4c62-b6b8-35b9d74eca36">
-<img width="1440" alt="Screenshot 2024-11-30 at 2 31 40 PM" src="https://github.com/user-attachments/assets/9325ff4a-be18-46e7-9108-e25c756738cc">
-<img width="1440" alt="Screenshot 2024-11-30 at 2 31 56 PM" src="https://github.com/user-attachments/assets/6c42029d-b966-431b-bbc3-10c86b8dfa15">
+<img width="1354" alt="Screenshot 2024-11-30 at 5 04 35 PM" src="https://github.com/user-attachments/assets/13680fea-a452-4210-b7c6-08f2f36abedd">
+<img width="1087" alt="Screenshot 2024-11-30 at 5 05 36 PM" src="https://github.com/user-attachments/assets/2b373885-5d99-494d-b569-96d835ea4932">
+<img width="1081" alt="Screenshot 2024-11-30 at 5 06 42 PM" src="https://github.com/user-attachments/assets/bbd9667c-79f3-48c3-8683-0506041e7b82">
 
 **Will be developed soon to show more accurate graphs**
 
@@ -61,8 +60,7 @@ The repository is divided into the following main directories:
 
 - **CORS Errors**: Ensure the server has CORS enabled to allow requests from `localhost`.
 - **Module Not Found**: Ensure all dependencies are installed by running `npm install` in both the root and `front` directories.
-- **Server Not Found**: Make sure the server is running on `192.168.45.197:3001` and can be accessed from your front-end application.
+- **Server Not Found**: Make sure the server is running on the right API address.
 
 
-## Contributors
-- **Jennie (Zhanylmyrza Askarova)**
+

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend } from 'chart.js';
 import { Scatter } from 'react-chartjs-2';
+import axios from 'axios';
 
 // Register the required components
 ChartJS.register(CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend);
@@ -11,21 +12,20 @@ const EfficiencyGraph: React.FC = () => {
   const [currentEfficiency, setCurrentEfficiency] = useState<number | null>(null);
 
   useEffect(() => {
-    // Fetch data from API
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://192.168.45.197:3001/efficiencyData');
-        const data = await response.json();
-        if (data && data.efficiency) {
-          setEfficiencyData([{ x: 1, y: data.efficiency }]);
-          setCurrentEfficiency(data.efficiency);
+    // Fetching data from the optimization endpoint
+    axios.get('http://127.0.0.1:5000/optimization')
+      .then(response => {
+        if (response.data && response.data.efficiency) {
+          const efficiencyValue = response.data.efficiency;
+          setEfficiencyData([{ x: 1, y: efficiencyValue }]);
+          setCurrentEfficiency(efficiencyValue);
+        } else {
+          console.error('Efficiency data not found in the response');
         }
-      } catch (error) {
+      })
+      .catch(error => {
         console.error('Error fetching efficiency data:', error);
-      }
-    };
-
-    fetchData();
+      });
   }, []);
 
   const chartData = {
@@ -38,6 +38,7 @@ const EfficiencyGraph: React.FC = () => {
       },
     ],
   };
+
   const options = {
     responsive: true,
     plugins: {

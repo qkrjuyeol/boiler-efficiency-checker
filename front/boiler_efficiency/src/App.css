@@ -16,6 +16,18 @@
 
 .sidebar li {
   margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background-color: #d3d3d3;
+}
+
+.sidebar li.active {
+  background-color: #7ba6b4;
+  color: #ffffff;
 }
 
 .content {

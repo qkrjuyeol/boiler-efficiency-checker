@@ -37,4 +37,6 @@ Jennie(데이터 전처리)
 권보민(RF)
 
 ### Front
+Jennie 
+권보민
 

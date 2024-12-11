@@ -38,5 +38,6 @@ Jennie(데이터 전처리)
 
 ### Front
 Jennie 
+
 권보민
 
